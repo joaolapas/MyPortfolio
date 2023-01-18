@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
     padding: 0 30px;
     height: 800px;
     position:relative;
+    top: -80px;
     z-index: 1 ;
     
     &:before {
@@ -108,4 +109,44 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`
+
+export const LeftSideButtons = styled.div`
+    position: absolute;
+    top: 30%;
+    left: -170px;
+    z-index: 4;
+
+`
+
+export const LeftBtn = styled.div`
+`
+export const LeftButton = styled.button`
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    background: ${({primary}) => (primary? '#01bf71' : '#010606')};
+    white-space: nowrap;
+    color: ${({dark}) => (dark? '#010606' : '#fff')};
+    font-size: ${({fontBig}) => (fontBig? '20px' : '16px')};
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    margin-bottom: 40px;
+    
+    div {
+        padding-right: 5px;
+        padding-top: 5px;
+        font-size: 1.4rem;
+    }
+
+    &:hover {
+        transition: all .3s ease-in-out;
+        background: ${({primary}) => (primary? '#01ff71' : '#01bf71')};
+        transform: translateX(80px);
+    }
 `

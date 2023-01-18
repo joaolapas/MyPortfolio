@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../ButtonElement";
+import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import {
   HeroContainer,
   HeroBg,
@@ -10,7 +11,10 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
-  HeroName
+  HeroName,
+  LeftSideButtons,
+  LeftBtn,
+  LeftButton
 } from "./HeroElements";
 import Video from "../../videos/video.mp4";
 
@@ -23,6 +27,32 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home ">
+    <HeroBg><LeftSideButtons>
+    <LeftBtn>
+      <LeftButton
+      primary={true}
+      dark={true}
+      onMouseEnter={onHover}
+      onMouseLeave={onHover}
+      ><div>GitHub</div><div><FaGithub/></div></LeftButton>
+    </LeftBtn>
+    <LeftBtn>
+      <LeftButton
+      primary={true}
+      dark={true}
+      onMouseEnter={onHover}
+      onMouseLeave={onHover}
+      ><div>LinkedIn</div><div><FaLinkedin/></div></LeftButton>
+    </LeftBtn>
+    <LeftBtn>
+      <LeftButton
+      primary={true}
+      dark={true}
+      onMouseEnter={onHover}
+      onMouseLeave={onHover}
+      ><div>CV</div><div><FaFileDownload/></div></LeftButton>
+    </LeftBtn>
+  </LeftSideButtons></HeroBg>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
@@ -43,6 +73,7 @@ const HeroSection = () => {
             My Projects {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
+        
       </HeroContent>
     </HeroContainer>
   );
