@@ -18,6 +18,7 @@ import {
   LeftButton
 } from "./HeroElements";
 import Video from "../../videos/video.mp4";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -25,6 +26,24 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover);
   };
+
+  const hi = 'Hi,'.split('');
+  const im = "I'm".split('');
+  const joao = 'João'.split('');
+  const lapas = 'Lapas'.split('');
+  const rubberBand = () => {
+    return {
+      transform:[
+        "scale3d(1, 1, 1)",
+        "scale3d(1.4, .55, 1)",
+        "scale3d(.75, 1.25, 1)",
+        "scale3d(1.25, .85, 1)",
+        "scale3d(.9, 1.05, 1)",
+        "scale3d(1, 1, 1)"
+      ]
+    }
+  }
+  
 
   return (
     <HeroContainer id="home ">
@@ -59,9 +78,57 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH2 style={{fontSize:'5rem', marginLeft: '-5px'}}>HI,</HeroH2>
-        <HeroH2>I'm</HeroH2>
-        <HeroName >João Lapas</HeroName>
+        <HeroH2 style={{fontSize:'5rem', marginLeft: '-5px'}}>{
+          hi.map((item, index) => {
+            return (
+              <motion.span
+                key={index}
+                whileHover={() => rubberBand()}
+                style={{display: 'inline-block'}}
+              >
+                {item}
+              </motion.span>
+            )
+          })
+        }</HeroH2>
+        <HeroH2>{
+          im.map((item, index) => {
+            return (
+              <motion.span
+                key={index}
+                whileHover={() => rubberBand()}
+                style={{display: 'inline-block'}}
+              >
+                {item}
+              </motion.span>
+            )
+          })
+        }</HeroH2>
+        <HeroName >{
+          joao.map((item, index) => {
+            return (
+              <motion.span
+                key={index}
+                whileHover={() => rubberBand()}
+                style={{display: 'inline-block'}}
+              >
+                {item}
+              </motion.span>
+            )
+          }) 
+        } {
+          lapas.map((item, index) => {
+            return (
+              <motion.span
+                key={index}
+                whileHover={() => rubberBand()}
+                style={{display: 'inline-block'}}
+              >
+                {item}
+              </motion.span>
+            )
+          }) 
+        }</HeroName>
         <HeroP>I am a front-end developer. <br/>Please feel free to browse through my works.
         </HeroP>
         <HeroBtnWrapper>

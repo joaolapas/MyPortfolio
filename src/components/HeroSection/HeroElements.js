@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdArrowForward, MdArrowRight } from "react-icons/md";
+import {motion} from "framer-motion";
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
