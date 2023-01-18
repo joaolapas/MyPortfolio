@@ -119,7 +119,9 @@ export const LeftSideButtons = styled.div`
 
 `
 
-export const LeftBtn = styled.div`
+export const LeftBtn = styled.a`
+    text-decoration: none;
+    
 `
 export const LeftButton = styled.button`
     border-radius: 20px;

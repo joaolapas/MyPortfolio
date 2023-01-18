@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../ButtonElement";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import cv from '../../CV/cv.pdf'
 import {
   HeroContainer,
   HeroBg,
@@ -28,15 +29,16 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home ">
     <HeroBg><LeftSideButtons>
-    <LeftBtn>
+    <LeftBtn href='https://github.com/joaolapas'>
       <LeftButton
+      value='to my GitHub page'
       primary={true}
       dark={true}
       onMouseEnter={onHover}
       onMouseLeave={onHover}
       ><div>GitHub</div><div><FaGithub/></div></LeftButton>
     </LeftBtn>
-    <LeftBtn>
+    <LeftBtn href='https://www.linkedin.com/in/joaolapas/'>
       <LeftButton
       primary={true}
       dark={true}
@@ -44,7 +46,7 @@ const HeroSection = () => {
       onMouseLeave={onHover}
       ><div>LinkedIn</div><div><FaLinkedin/></div></LeftButton>
     </LeftBtn>
-    <LeftBtn>
+    <LeftBtn href={cv} download>
       <LeftButton
       primary={true}
       dark={true}
