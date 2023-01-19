@@ -1,0 +1,14 @@
+import { FaReact } from "react-icons"
+import project1 from "../../images/project1.png";
+
+export const cards = [
+    {
+      id: 1,
+      image: project1,
+      title: `${FaReact}`,
+      description: "example example example example example example example example example",
+      longDescription: "example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example ",
+      icons: `{$}`
+    }
+    
+  ];

@@ -26,37 +26,37 @@ const ProjectsSection = () => {
       id: 1,
       image: project1,
       title: "Project 1",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
     {
       id: 2,
       image: project1,
       title: "Project 2",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
     {
       id: 3,
       image: project1,
       title: "Project 3",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
     {
       id: 4,
       image: project1,
       title: "Project 4",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
     {
       id: 5,
       image: project1,
       title: "Project 5",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
     {
       id: 6,
       image: project1,
       title: "Project 6",
-      description: "blablabalablabalabalabla",
+      description: "example example example example example example example example example",
     },
   ];
 
@@ -81,12 +81,13 @@ const ProjectsSection = () => {
       <CardsContainer>
         {cards.map((card) => (
           <motion.div
+            key={card.id}
             animate={hoverControl}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
           >
-            <ProjectCard key={card.id}>
+            <ProjectCard>
               <ProjectCardImage src={card.image}></ProjectCardImage>
               <ProjectCardTitle>{card.title}</ProjectCardTitle>
               <ProjectCardDescription>

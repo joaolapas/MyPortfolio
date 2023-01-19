@@ -51,4 +51,6 @@ export const ProjectCardDescription = styled.p`
     color:#fff;
     padding: 10px;
     height: 100px;
+    max-width: 300px;
+    text-align: center;
 `

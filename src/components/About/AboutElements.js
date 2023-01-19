@@ -103,7 +103,7 @@ export const AboutText = styled.pre`
   display: block;
   color: #000;
   padding: 30px;
-  margin-right: 100px;
+  margin-right: 150px;
   margin-top: 20px;
   rotate: 4deg;
 

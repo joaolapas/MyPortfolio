@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "../ButtonElement";
+import { Button } from "./ButtonElement";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import cv from "../../CV/cv.pdf";
 import {
