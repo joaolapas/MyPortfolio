@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { MdArrowForward, MdArrowRight } from "react-icons/md";
-import {motion} from "framer-motion";
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -117,6 +116,12 @@ export const LeftSideButtons = styled.div`
     top: 30%;
     left: -170px;
     z-index: 4;
+
+    @media screen and (max-width: 768px) {
+        scale: calc(.8);
+        translate: 14px;
+        top: 10%;
+    }
 
 `
 

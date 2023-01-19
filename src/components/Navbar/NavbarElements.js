@@ -41,6 +41,12 @@ export const NavLogo = styled(LinkRouter)`
     justify-content: center;
     margin-left: 24px;
     text-decoration: none;
+    transition: 0.8s all ease;
+
+    &:hover {
+        scale: 1.05;
+        transition: 0.5s all ease;
+    }
 `
 export const LogoH2= styled.h2`
     font-size: 1.3rem;
@@ -102,7 +108,7 @@ export const NavLinks = styled(LinkScroll)`
         transition: all .3s ease-in-out;
     }
 
-    &:active {
+    &.active {
         border-bottom: 3px solid #01ff71;
         transition: all .1s ease-in-out;
     }
