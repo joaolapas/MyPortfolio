@@ -3,9 +3,13 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   background: #000;
   color: white;
-  height: 200vh;
+  height: 140vh;
   margin-top: -80px;
   padding-top: 200px;
+
+  @media screen and (max-width: 768px) {
+    height: 90vh;
+  }
 `;
 
 export const AboutVideoContainer = styled.div`
@@ -53,6 +57,7 @@ export const AboutVideoContainer = styled.div`
     translate: 40px;
     width: 250px;
     height: 150px;
+    margin-top: -30px;;
   }
 `;
 
@@ -75,6 +80,8 @@ export const TextContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: flex-end;
+
+  
 
   @media screen and (max-width: 1380px) {
     width: 90vw;
@@ -106,9 +113,10 @@ export const AboutText = styled.pre`
   }
   @media screen and (max-width: 780px) {
     scale: .70;
+    
   }
   @media screen and (max-width: 580px) {
-   
+    
   }
   @media screen and (max-width: 480px) {
     

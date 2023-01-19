@@ -1,6 +1,7 @@
 import React from "react";
 import AboutSection from "../components/About";
 import HeroSection from "../components/HeroSection";
+import ProjectsSection from "../components/ProjectsSection";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Navbar toggle={toggle}/>
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
     </>
   );
 };

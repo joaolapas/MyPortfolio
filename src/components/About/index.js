@@ -32,11 +32,11 @@ const AboutSection = () => {
   
   My objective is to continue growing and improving every day.`
   const SpidermanAnimation = {
-    Spidermanvisible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+    Spidermanvisible: { opacity: 1, x: 0, transition: { duration: .5 } },
     Spidermanhidden: { opacity: 0, x: -800, transition: { duration: 2.0 } },
   };
   const TextAnimation = {
-    Spidermanvisible: { opacity: 1, x: 0, transition: { duration: 2.0 } },
+    Spidermanvisible: { opacity: 1, x: 0, transition: { duration: 1.0 } },
     Spidermanhidden: { opacity: 0, x: -2000, transition: { duration: 3.0 } },
   };
   const controls = useAnimation();
