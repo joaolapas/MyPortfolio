@@ -5,6 +5,7 @@ import {
   AboutVideo,
   TextContainer,
   AboutText,
+  Title
 } from "./AboutElements";
 import Video from "../../videos/spiderman.mp4";
 import { motion, useAnimation } from "framer-motion";
@@ -62,6 +63,7 @@ const AboutSection = () => {
           variants={TextAnimation}
         >
           <TextContainer>
+            <Title>About me</Title>
             <AboutText>{aboutText}</AboutText>
           </TextContainer>
         </motion.div>

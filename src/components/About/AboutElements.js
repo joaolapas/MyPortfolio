@@ -3,13 +3,11 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   background: #000;
   color: white;
-  height: 140vh;
+  height: 90vh;
   margin-top: -80px;
   padding-top: 200px;
 
-  @media screen and (max-width: 768px) {
-    height: 90vh;
-  }
+  
 `;
 
 export const AboutVideoContainer = styled.div`
@@ -97,6 +95,24 @@ export const TextContainer = styled.div`
     padding-right:40px;
   }
 `;
+
+export const Title = styled.h1`
+  translate: 300px;
+  color: #01ef01;
+  font-size: 3rem;
+  text-align: right;
+  margin-top: -100px;
+
+  @media screen and (max-width: 590px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 2.5rem;
+    margin-top: -200px;
+    translate: 320px;
+    width: 300px;
+  }
+`
 
 export const AboutText = styled.pre`
   width: 25vw;

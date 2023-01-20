@@ -41,7 +41,7 @@ const Navbar = (props) => {
                         
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/messageme'>Mensage Me</NavBtnLink>
+                        <NavBtnLink to='/contact-form'>Mensage Me</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
