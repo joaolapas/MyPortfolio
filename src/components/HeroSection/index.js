@@ -21,7 +21,7 @@ import Video from "../../videos/video.mp4";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -61,7 +61,7 @@ const HeroSection = () => {
   }, [controls, inView]);
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id="home" modalIsOpen={props.modalIsOpen}>
       <HeroBg>
         <LeftSideButtons>
           <motion.div 

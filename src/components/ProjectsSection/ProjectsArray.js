@@ -7,9 +7,9 @@ const Cards = [
     {
       id: 1,
       image: project1,
-      title: 'Projeto 1',
-      description: "example example example example example example example example example",
-      longDescription: "example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example ",
+      title: 'Portfolio Website',
+      description: "This is a short description that will be showed in the card!",
+      longDescription: "This is a much longer description! I plan to show it in the big card maybe in a modal or so, when We click one of the cards. In this big card it will be show much more details about each project",
       icons: 'kjh'
     },
     {

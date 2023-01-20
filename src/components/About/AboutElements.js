@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   background: #000;
   color: white;
-  height: 90vh;
+  height: 120vh;
   margin-top: -80px;
   padding-top: 200px;
 
@@ -98,7 +98,7 @@ export const TextContainer = styled.div`
 
 export const Title = styled.h1`
   translate: 300px;
-  color: #01ef01;
+  color: #01ef71;
   font-size: 3rem;
   text-align: right;
   margin-top: -100px;

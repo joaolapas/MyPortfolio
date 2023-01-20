@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     background: rgba(0, 0, 0, 0.8);
     height: 80px;
     //margin-top: -80px;
-    display: flex;
+    display: ${({modalIsOpen}) => (modalIsOpen? 'none' : 'flex')};
     justify-content: center;
     align-items: center;
     font-size: 1rem;

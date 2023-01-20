@@ -18,7 +18,7 @@ const Navbar = (props) => {
     
     return (
         <>
-            <Nav>
+            <Nav modalIsOpen={props.modalIsOpen}>
                 <NavbarContainer>
                     <NavLogo to='/'>
                         <LogoH2><span style={{color:'#01bf71'}}>MY</span>PORTFOLIO</LogoH2>
@@ -33,10 +33,10 @@ const Navbar = (props) => {
                             <NavLinks to='home' activeStyle={true} spy={true} smooth={true} offset={-200} duration={500}>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about' activeStyle={true} spy={true} smooth={true} offset={-160} duration={500}>About</NavLinks>
+                            <NavLinks to='about' activeStyle={true} spy={true} smooth={true} offset={-60} duration={500}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='projects' activeStyle={true} spy={true} smooth={true} offset={-80} duration={500}>Projects</NavLinks>
+                            <NavLinks to='projects' activeStyle={true} spy={true} smooth={true} offset={-50} duration={500}>Projects</NavLinks>
                         </NavItem>
                         
                     </NavMenu>
