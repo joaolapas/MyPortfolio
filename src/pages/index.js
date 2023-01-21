@@ -21,7 +21,7 @@ const Home = () => {
       
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}  modalIsOpen={modalIsOpen}/>
-      <HeroSection modalIsOpen={modalIsOpen}/>
+      <HeroSection modalIsOpen={modalIsOpen} />
       <AboutSection />
       <ProjectsSection triggerModal={triggerModal} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>
       <FooterSection />

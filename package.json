@@ -1,6 +1,6 @@
 {
   "homepage": "https://joaolapas.github.io/MyPortfolio/",
-  "name": "styled-components-website",
+  "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

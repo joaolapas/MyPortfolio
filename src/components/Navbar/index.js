@@ -30,13 +30,13 @@ const Navbar = (props) => {
                     </MobileIcon> 
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='home' activeStyle={true} spy={true} smooth={true} offset={-200} duration={500}>Home</NavLinks>
+                            <NavLinks to='home'  spy={true} smooth={true} offset={-200} duration={500}>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about' activeStyle={true} spy={true} smooth={true} offset={-60} duration={500}>About</NavLinks>
+                            <NavLinks to='about'  spy={true} smooth={true} offset={-60} duration={500}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='projects' activeStyle={true} spy={true} smooth={true} offset={-50} duration={500}>Projects</NavLinks>
+                            <NavLinks to='projects'  spy={true} smooth={true} offset={-50} duration={500}>Projects</NavLinks>
                         </NavItem>
                         
                     </NavMenu>

@@ -7,9 +7,8 @@ import {
   NavBtn,
   NavBtnLink,
   FormContainer,
-  Alert,
 } from "./FormElements";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -1,5 +1,5 @@
-import { MotionConfig } from "framer-motion";
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect } from "react";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -11,7 +11,6 @@ import {
 } from "./ProjectsElements";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import project1 from "../../images/project1.png";
 import Cards from "./ProjectsArray";
 import Modal from "react-modal";
 
