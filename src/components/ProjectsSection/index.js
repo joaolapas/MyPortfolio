@@ -40,15 +40,12 @@ const modalStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: 'center'
+    justifyContent: 'center',
+    minWidth: '400px'
   },
 };
 
-if (window.matchMedia("(min-width: 600px)").matches) {
-  
-  modalStyles.content.width = "90vw";
-  modalStyles.content.height = "90vh";
-}
+
 
 Modal.setAppElement("#root");
 

@@ -78,11 +78,12 @@ export const ModalCard = styled.div`
   width: 100%;
   border-radius: 50px;
   position:relative;
-  flex-wrap: wrap;
+  
   overflow: scroll;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: nowrap;
+flex-wrap: nowrap;
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   
