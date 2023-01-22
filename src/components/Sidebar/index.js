@@ -17,13 +17,13 @@ const Sidebar = (props) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={props.toggle}>Home</SidebarLink>
-          <SidebarLink to="about" onClick={props.toggle}>About</SidebarLink>
-          <SidebarLink to="projects" onClick={props.toggle}>Projects</SidebarLink>
+          <SidebarLink to='home'  spy={true} smooth={true} offset={-200} duration={500} onClick={props.toggle}>Home</SidebarLink>
+          <SidebarLink to='about'  spy={true} smooth={true} offset={-80} duration={500} onClick={props.toggle}>About</SidebarLink>
+          <SidebarLink to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={props.toggle}>Projects</SidebarLink>
           
         </SidebarMenu>
         <SideBtnWrap>
-            <SidebarRoute to='/messageme' onClick={props.toggle}>Message Me</SidebarRoute>
+            <SidebarRoute to='/contact-form' onClick={props.toggle}>Message Me</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

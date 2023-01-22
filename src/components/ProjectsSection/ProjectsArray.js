@@ -10,7 +10,9 @@ const Cards = [
       title: 'Portfolio Website',
       description: "This is a short description that will be showed in the card!",
       longDescription: "This is a much longer description! I plan to show it in the big card maybe in a modal or so, when We click one of the cards. In this big card it will be show much more details about each project",
-      icons: 'kjh'
+      tools: ['tool1', 'tool2', 'tool3', 'tool4', 'tool5', 'tool6', 'tool7', 'tool8'],
+      linkCode: 'https://github.com',
+      linkLive: 'https://github.com',
     },
     {
       id: 2,

@@ -13,8 +13,10 @@ const Home = () => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   const triggerModal = () => {
-    setModalIsOpen((prev) => !prev);
+    setModalIsOpen((prev) => !prev)
   };
+
+  
   
   return (
     <>

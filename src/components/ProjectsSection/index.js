@@ -1,5 +1,4 @@
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -8,29 +7,52 @@ import {
   ProjectCardDescription,
   ProjectCardImage,
   CardsContainer,
+  ModalTools,
+  ModalCard,
+  ExitButton,
+  ModalCardImage,
+  ModalCardTitle,
+  ModalCardDescription,
+  LeftContainer,
+  RightContainer,
+  Tool,
+  ToolsTitle,
+  ProjectLinks,
+  CodeLink,
+  LiveLink,
 } from "./ProjectsElements";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Cards from "./ProjectsArray";
 import Modal from "react-modal";
+import { FaCode, FaDesktop } from "react-icons/fa";
 
 const modalStyles = {
   content: {
     top: "50%",
     left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "50vw",
-    height: "60vh",
-    position: 'absolute',
+    height: "70vh",
+    position: "absolute",
+    background: "#000",
+    borderRadius: "50px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: 'center'
   },
 };
 
+if (window.matchMedia("(min-width: 600px)").matches) {
+  
+  modalStyles.content.width = "90vw";
+  modalStyles.content.height = "90vh";
+}
+
 Modal.setAppElement("#root");
 
-const ProjectsSection = ({triggerModal, modalIsOpen, setModalIsOpen}) => {
+const ProjectsSection = ({ triggerModal, modalIsOpen, setModalIsOpen }) => {
   const TitleAnimation = {
     Titlevisible: { opacity: 1, x: 0, transition: { duration: 0.2 } },
     Titlehidden: { opacity: 0, x: -100, transition: { duration: 1.0 } },
@@ -44,7 +66,7 @@ const ProjectsSection = ({triggerModal, modalIsOpen, setModalIsOpen}) => {
     threshold: 0,
     rootMargin: "300px 100px 0px 0px",
   });
-  
+  const [cardSelected, setCardSelected] = useState(0);
 
   useEffect(() => {
     if (inView && window.innerWidth > 780) {
@@ -61,7 +83,11 @@ const ProjectsSection = ({triggerModal, modalIsOpen, setModalIsOpen}) => {
       controls.start("Cardshidden");
     }
   }, [controls, inView]);
-
+  //console.log(Cards)
+  const handleClickProject = (props) => {
+    setCardSelected(props);
+    triggerModal();
+  };
   return (
     <ProjectsContainer id="projects">
       <Modal
@@ -70,7 +96,37 @@ const ProjectsSection = ({triggerModal, modalIsOpen, setModalIsOpen}) => {
         style={modalStyles}
         contentLabel="Card Modal"
       >
-      <button onClick={()=>setModalIsOpen(false)}>Exit</button>
+        <ModalCard>
+          <LeftContainer>
+            <ModalCardImage src={cardSelected.image} />
+            <ModalCardTitle>{cardSelected.title}</ModalCardTitle>
+            <ModalCardDescription>
+              {cardSelected.longDescription}
+            </ModalCardDescription>
+          </LeftContainer>
+          <RightContainer>
+            <div>
+              <ToolsTitle>Weapons used:</ToolsTitle>
+              <ModalTools>
+                {cardSelected.tools &&
+                  cardSelected.tools.map((tool, index) => (
+                    <Tool style={{ color: "white" }} key={index}>
+                      {tool}
+                    </Tool>
+                  ))}
+              </ModalTools>
+            </div>
+            <ProjectLinks>
+              <CodeLink href={cardSelected.linkCode} target='_blank'>
+                <FaCode />
+              </CodeLink>
+              <LiveLink href={cardSelected.linkLive} target='_blank'>
+                <FaDesktop />
+              </LiveLink>
+            </ProjectLinks>
+          </RightContainer>
+        </ModalCard>
+        <ExitButton onClick={() => setModalIsOpen(false)}>Exit</ExitButton>
       </Modal>
       <motion.div
         ref={ref}
@@ -81,23 +137,24 @@ const ProjectsSection = ({triggerModal, modalIsOpen, setModalIsOpen}) => {
         <ProjectsH1>Projects</ProjectsH1>
       </motion.div>
       <CardsContainer>
-        {Cards.map((card) => (
-          <motion.div
-            key={card.id}
-            //ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={CardsAnimation}
-          >
-            <ProjectCard onClick={triggerModal}>
-              <ProjectCardImage src={card.image}></ProjectCardImage>
-              <ProjectCardTitle>{card.title}</ProjectCardTitle>
-              <ProjectCardDescription>
-                {card.description}
-              </ProjectCardDescription>
-            </ProjectCard>
-          </motion.div>
-        ))}
+        {Cards &&
+          Cards.map((card) => (
+            <motion.div
+              key={card.id}
+              //ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={CardsAnimation}
+            >
+              <ProjectCard onClick={() => handleClickProject(card)}>
+                <ProjectCardImage src={card.image}></ProjectCardImage>
+                <ProjectCardTitle>{card.title}</ProjectCardTitle>
+                <ProjectCardDescription>
+                  {card.description}
+                </ProjectCardDescription>
+              </ProjectCard>
+            </motion.div>
+          ))}
       </CardsContainer>
     </ProjectsContainer>
   );
