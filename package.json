@@ -65,7 +65,7 @@
   "scripts": {
   
     
-  "start": "PUBLIC_URL='/' react-scripts start",
+  "start": "PUBLIC_URL='/MyPortfolio' react-scripts start",
   
     
   "predeploy": "npm run build",
