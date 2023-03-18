@@ -54,6 +54,13 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: start;
     
+    @media screen and (max-width: 768px) {
+        padding: 30px;
+    }
+    @media screen and (max-width: 480px) {
+        scale: .9;
+    }
+    
 `
 
 export const HeroH2 = styled.h2`
@@ -63,9 +70,11 @@ export const HeroH2 = styled.h2`
 
     @media screen and (max-width: 768px) {
         font-size: 36px;
+        padding-left: 10px;
     }
     @media screen and (max-width: 480px) {
         font-size: 20px;
+        padding-left: 30px;
     }
 `
 export const HeroName = styled.h1`
@@ -74,9 +83,11 @@ export const HeroName = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 4rem;
+        padding-left: 10px;
     }
     @media screen and (max-width: 480px) {
         font-size: 3rem;
+        padding-left: 30px;
     }
 `
 
@@ -89,6 +100,7 @@ export const HeroP = styled.p`
 
     @media screen and (max-width: 768px) {
         font-size: 20px;
+        padding-left: 10px;
     }
     @media screen and (max-width: 768px) {
         font-size: 16px;
