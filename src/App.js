@@ -5,7 +5,7 @@ import ContactForm from "./pages/contactForm";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/MyPortfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-form" element={<ContactForm />} />
