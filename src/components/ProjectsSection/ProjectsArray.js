@@ -24,6 +24,16 @@ const Cards = [
       linkCode: 'https://github.com/joaolapas/pokedex/',
       linkLive: 'https://joaolapas.github.io/pokedex/',
     },
+    {
+      id: 3,
+      image: project3,
+      title: 'eShop',
+      description: "Small e-commerce site,",
+      longDescription: "Includes basic eCommerce functionalities such as adding items to the cart, payment integration with the Stripe API, user authentication, and a restricted area for adding products. It also has a backend to support the frontend functionalities",
+      tools: ['React JS', 'React-Router', 'Sass', 'Zustand', 'ExpressJS', 'Cloudinary', 'MongoDB'],
+      linkCode: 'https://github.com/joaolapas/eShop.v2/',
+      linkLive: 'https://joaolapas.github.io/eShop.v2/',
+    },
     
   ];
 
