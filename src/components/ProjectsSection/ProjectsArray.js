@@ -8,7 +8,7 @@ const Cards = [
       id: 1,
       image: project1,
       title: 'Portfolio Website',
-      description: "My portfolio website is built with React.js and features smooth navigation with react-scroll, a contact page with react-router, and engaging animations.",
+      description: "My portfolio website is built with React.js",
       longDescription: "Welcome to my portfolio website, built with React.js! This simple and almost single-page site uses react-scroll for smooth navigation and includes a contact page accessible with react-router. The site features animations to enhance the user experience and provide a more engaging interface. Overall, this website showcases my skills in React.js development and my ability to create clean, modern designs.",
       tools: ['React JS', 'React-Scroll', 'React-Router', 'StyledComponents', 'Framer Motion', 'React-toastify', 'Email JS'],
       linkCode: 'https://github.com/joaolapas/MyPortfolio/',
