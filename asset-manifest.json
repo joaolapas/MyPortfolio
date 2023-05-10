@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.3dd4d210.css",
-    "main.js": "/MyPortfolio/static/js/main.25b081eb.js",
+    "main.js": "/MyPortfolio/static/js/main.186492c5.js",
     "static/media/video.mp4": "/MyPortfolio/static/media/video.cac51f866e44fd52b9eb.mp4",
     "static/media/spiderman.mp4": "/MyPortfolio/static/media/spiderman.ec1c6e8c9ec636b56639.mp4",
+    "static/media/searchYourMovie.png": "/MyPortfolio/static/media/searchYourMovie.999150aac5c3a4bf1a34.png",
     "static/media/project2.png": "/MyPortfolio/static/media/project2.f545e89a87612ff1d0ca.png",
     "static/media/project1.png": "/MyPortfolio/static/media/project1.1a754778f73727e5aa61.png",
     "static/media/project3.png": "/MyPortfolio/static/media/project3.00bc14110ea9e0ec2d57.png",
+    "static/media/calculator.png": "/MyPortfolio/static/media/calculator.ed66c5b8c5d74c4189e9.png",
+    "static/media/kindOfBlog.png": "/MyPortfolio/static/media/kindOfBlog.b53368af7295446ac1de.png",
     "static/media/cv.pdf": "/MyPortfolio/static/media/cv.eb2108b54d4d74528daa.pdf",
     "index.html": "/MyPortfolio/index.html",
     "main.3dd4d210.css.map": "/MyPortfolio/static/css/main.3dd4d210.css.map",
-    "main.25b081eb.js.map": "/MyPortfolio/static/js/main.25b081eb.js.map"
+    "main.186492c5.js.map": "/MyPortfolio/static/js/main.186492c5.js.map"
   },
   "entrypoints": [
     "static/css/main.3dd4d210.css",
-    "static/js/main.25b081eb.js"
+    "static/js/main.186492c5.js"
   ]
 }
