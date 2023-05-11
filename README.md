@@ -8,4 +8,4 @@ I will try to keep the code clean and organized, something that did not happen i
 The plan is a website with two or three sections on the same page, I will use react-scroll. 
 I want to put a shortcut menu for the different sections. 
 A navbar always visible, and maybe a button to send a message directly. 
-A section with my projects arranged in cards, which allows me to easily add new projects.
+A section with my projects arranged in cards, which allows me to easily add new projects...
