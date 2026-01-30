@@ -48,8 +48,9 @@ const Form = () => {
         "service_6grktup",
         "template_snakpup",
         form.current,
-        "dGSRbEuUE8Q6iFm8b"
+          { publicKey: "dGSRbEuUE8Q6iFm8b" }
       )
+
       .then(
         (result) => {
           console.log(result.text);
