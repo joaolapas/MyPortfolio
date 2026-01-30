@@ -44,12 +44,12 @@ const Form = () => {
       });
     };
     emailjs
-      .sendForm(
-        "service_6grktup",
-        "template_snakpup",
-        form.current,
-          { publicKey: "dGSRbEuUE8Q6iFm8b" }
-      )
+        .sendForm(
+            "service_6grktup",
+            "template_snakpup",
+            form.current,
+            "C7M914jrCp8qoPln-"
+        )
 
       .then(
         (result) => {
